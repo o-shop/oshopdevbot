@@ -7,3 +7,7 @@
 # GMAIL_USERNAME: 'Your_Gmail_Username'
 # makes 'Your_Gmail_Username' available as ENV["GMAIL_USERNAME"]
 TELEGRAM_BOT_API_KEY: "PUT YOUR BOT TOKEN HERE"
+MYSQL_HOST: ""
+MYSQL_USER: ""
+MYSQL_PASS: ""
+MYSQL_DB: ""

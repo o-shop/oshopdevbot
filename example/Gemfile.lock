@@ -1,18 +1,25 @@
-GIT
-  remote: git://github.com/eljojo/telegram_bot.git
-  revision: cc5a16510682dabfe0d697529d5570b7ace7ca74
-  specs:
-    telegram_bot (0.0.6)
-      excon (>= 0.30.0)
-      virtus (>= 1.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (4.2.6)
+      activesupport (= 4.2.6)
+      builder (~> 3.1)
+    activerecord (4.2.6)
+      activemodel (= 4.2.6)
+      activesupport (= 4.2.6)
+      arel (~> 6.0)
+    activesupport (4.2.6)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    arel (6.0.3)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
+    builder (3.2.2)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     daemons (1.2.4)
@@ -20,8 +27,17 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     equalizer (0.0.11)
     excon (0.52.0)
+    i18n (0.7.0)
     ice_nine (0.11.2)
+    json (1.8.3)
+    minitest (5.9.0)
+    mysql (2.9.1)
+    telegram_bot (0.0.6)
+      excon (>= 0.30.0)
+      virtus (>= 1.0.0)
     thread_safe (0.3.5)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -32,8 +48,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord
   daemons
-  telegram_bot!
-
-BUNDLED WITH
-   1.11.2
+  mysql
+  telegram_bot
